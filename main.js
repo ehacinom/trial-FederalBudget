@@ -1,4 +1,6 @@
 var _0x6780 = ["fbMask", "getElementById", "select", "display", "none", "style", "block", "sum_Federal", "Federal", "GovXFer", "State", "Local", "Category", "Level1", "Level2", "Level3", "Level4", "#bd0026", "#fecc5c", "#fd8d3c", "#f03b20", "#B02D5D", "#9B2C67", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#d7b5d8", "#dd1c77", "#5A0C7A", ",.3f", "format", "$", " Billion", "tree", "layout", "values", "children", "size", "toolTip", "head", "header1", "header2", "fedSpend", "stateSpend", "localSpend", "federalButton", "stateButton", "localButton", "federalDiv", "stateDiv", "localDiv", "y", "x", "projection", "diagonal", "svg", "transform", "translate(", ",", ")", "attr", "svg:g", "append", "height", "width", "svg:svg", "#body", "FederalBudget_2013_a.csv", "length", "push", "forEach", "entries", "key", "nest", "x0", "y0", "reverse", "nodes", "click", "class", "selected", "sum_State", "on", "sum_Local", "sum_", "range", "domain", "sqrt", "scale", "actuals", "csv", "source_", "parent", "depth", "max", "event", "altKey", "numChildren", "linkColor", "_children", "source", "id", "data", "g.node", "selectAll", " has too many departments (", ") to view at once.", "node", "enter", "stroke", "fill-opacity", ".8", "fill", "mouseout", "opacity", "0", "duration", "transition", "mouseover", "r", "svg:circle", "substr", "...", "text", "text-anchor", "end", "start", "dy", ".35em", "svg:text", "circle", "remove", "exit", "links", "target", "path.link", "stroke-linecap", "round", "stroke-opacity", "stroke-width", "d", "link", "svg:path", "g", "insert", ".9", "source_Level1", "source_Level2", "", "source_Level3", "html", " - ", "source_Level4", "top", "pageY", "px", "left", "pageX", "unselected"];
+
+/*
 var fbMask = d3[_0x6780[2]](document[_0x6780[1]](_0x6780[0]));
 
 function fb_mouseOver() {
@@ -8,6 +10,8 @@ function fb_mouseOver() {
 function fb_mouseOut() {
     fbMask[_0x6780[5]](_0x6780[3], _0x6780[6]);
 };
+*/
+
 var m = [20, 120, 20, 120],
     w = 1280 - m[1] - m[3],
     h = 900 - m[0] - m[2],
