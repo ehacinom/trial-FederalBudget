@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <meta HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EmulateIE9" >
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta property="og:image" content="http://www.brightpointinc.com/interactive/images/Budget_202px.png">
+    <meta name="verify-v1" content="76mLLsz9Quagn33AQKKRm8yvB0rV1yl7nuQ/mrrph4U=" />
+    <title>Federal Budget Data Visualization D3.js</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="d3.js"></script>
+
+    <!-- Google Analytics -->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-173014-2', 'brightpointinc.com');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+<style>
+    a:hover {
+        font-weight:bold;
+        color:#000000;
+    }
+
+</style>
+<body style="height:900px; width:1280px; overflow:auto" onload="start();">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="nytg-navBar" style="left:20px;">
+    <ul class="nytg-navigation clearfix" style="list-style-type:none">
+        <li id="federalButton" class="selected">Federal</li>
+        <li id="stateButton">State</li>
+        <li id="localButton">Local</li>
+    </ul>
+</div>
+
+
+
+<div id="footer" style="position:absolute; right:20px; top:15px;">
+    2013 Federal Budget
+    <div class="hint" style="font-style:italic;">
+        click on a circle for a more granular view.<br>
+        click on "Federal", "State", or "Local" buttons to see spending at those levels.
+        <br>
+        Data Source: <a href="http://www.usgovernmentspending.com title="www.usgovernmentspending.com" style="color:#777">www.usgovernmentspending.com</a>
+        <br><br>
+        <div style="color:#000; font-style:normal">
+        Design and Engineering: <a href="http://www.brightpointinc.com/project-list/" title="BrightPoint Consulting, Inc.">www.brightpointinc.com</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="body" style="position: absolute; top:80px">
+
+<div id="toolTip" class="tooltip" style="opacity:0;">
+    <div id="head" class="header"></div>
+    <div id="header1" class="header1"></div>
+    <div id="header2" class="header2"></div>
+    <div style="position:absolute; left:10px">
+        <div id="federalDiv" style="width:135px; left:0px; top:10px; position: absolute;" class="selected">
+            <div class="header3"><br>Federal Funds</div>
+            <div class="header-rule"></div>
+            <div id="fedSpend" class="header4"></div>
+        </div>
+        <div id="stateDiv" style="width:125px; left:140px; top:10px; position: absolute;">
+            <div class="header3"><br>State Funds</div>
+            <div class="header-rule"></div>
+            <div id="stateSpend" class="header4"></div>
+        </div>
+        <div id="localDiv" style="width:125px; left:272px; top:10px; position: absolute;">
+            <div class="header3"><br>Local Funds</div>
+            <div class="header-rule"></div>
+            <div id="localSpend" class="header4"></div>
+        </div>
+    </div>
+    <div  class="tooltipTail"></div>
+</div>
+
+<div class="fb-like" onmouseout="fb_mouseOut();" style="z-index: 9998; position:absolute; left:70px; top:0px;" data-href="http://www.brightpointinc.com/interactive/budget/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+
+<div id="fbMask" onmouseover="fb_mouseOver();" style="z-index:9999; position:absolute; left:70px; top:0px; width:100px; height:20px; background: white; opacity:0.7;"></div>
+
+
+<script type="text/javascript" src="main.js"></script>
+
+
+</body></html>
